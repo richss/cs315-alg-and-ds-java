@@ -11,7 +11,7 @@ public class SLList<Item> implements List<Item> {
 	private Node tail;
 
 	public SLList() {
-		head = null;
+		head = tail = null;
 	}
 
 	public Item getAt(int loc) {
