@@ -1,13 +1,16 @@
+package edu.erau.cs315;
+
+
 /**
  * Implement of a stack for Evacuees representing a bus
- *
  */
 
 public class Bus {
 
     int id;
 
-    //@todo declare any class variables for the array-based stack implementation here.
+    //Class Variables
+    // @todo declare any class variables for an array-based stack implementation here.
 
     /**
      * Implement Default constructor
@@ -25,7 +28,6 @@ public class Bus {
      * @param evac - evacuee pushed onto stack
      */
     public void push(Evacuee evac) {
-
         //@todo - implement array-based push method.
     }
 
@@ -63,5 +65,18 @@ public class Bus {
     public boolean isFull() {
         //@todo - implement array-based isFull method
         return true;
+    }
+
+
+    /**
+    * @TODO Implement main method to serve as test client for the EvacuationQueue
+    */
+    public static void main(String args[])
+    {
+        //@TODO Declare List
+
+        //@TODO Push some Evaquees on bus
+
+        //@TODO pop some evaquees from bus
     }
 }
