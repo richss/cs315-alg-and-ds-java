@@ -1,8 +1,11 @@
 # Module 0 - Demo - Recursive Binary Search
 
-To Compile: javac -d build *.java
+*To Compile:*
+* create directory build in the m0-binarysearch folder
+* From command line:
+	- javac -d build *.java
 
-* To Execute: 
+* To Execute from command line (cmd.exe for Windows 10): 
 	+ java -classpath build edu.princeton.cs.algs4.BinarySearch tinyW.txt < tinyT.txt
 	+ java -classpath build edu.princeton.cs.algs4.BinarySearch largeW.txt < largeT.txt
 	+ java -classpath build edu.princeton.cs.algs4.RecursiveBinarySearch tinyW.txt < tinyT.txt
@@ -14,5 +17,5 @@ This demonstration is produced for CS 315. It builds upon the source code produc
        http://algs4.cs.princeton.edu
 
 
-BinarySearch.Java - From Sedgewick and Wayne
-RecursiveBinarySearch - From Stansbury        
+* BinarySearch.Java - From Sedgewick and Wayne
+* RecursiveBinarySearch - From Stansbury        
