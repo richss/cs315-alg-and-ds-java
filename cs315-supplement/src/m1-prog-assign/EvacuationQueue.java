@@ -1,3 +1,5 @@
+package edu.erau.cs315;
+
 /**
  * Implementation of an queue for storing Evacuees
  */
@@ -57,5 +59,18 @@ public class EvacuationQueue {
     public boolean isFull() {
         //@todo implement isEmpty method
         return true;
+    }
+
+
+    /**
+    * @TODO Implement main method to serve as test client for the EvacuationQueue
+    */
+    public static void main(String args[])
+    {
+        //@TODO Declare List
+
+        //@TODO Enqueue some Evaquees
+
+        //@TODO Dequeue evaquees 
     }
 }

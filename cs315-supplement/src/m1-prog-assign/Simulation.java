@@ -1,3 +1,6 @@
+package edu.erau.cs315;
+
+
 /**
  * Implentation of a evacuation simulator.
  *
@@ -45,10 +48,7 @@ public class Simulation {
         //@todo initialize "before" queue to store evacuees waiting for buses
         //@todo initailize "after" queue to store evacuees once unloaded from buses
 
-
-
         this.numEvacuees = numEvacuees;
-
     }
 
 

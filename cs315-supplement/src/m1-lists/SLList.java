@@ -15,6 +15,10 @@ public class SLList<Item> implements List<Item> {
 	}
 
 	public Item getAt(int loc) {
+		//Special case - empty list
+		if ((head == null) || (loc < 0)) 
+			return null;
+
 		Node cur = head;
 		for (int i=0; i < loc; i++) {
 			if (cur.next == null) 
@@ -34,14 +38,12 @@ public class SLList<Item> implements List<Item> {
 		Node prevNode = null;
 		Node cur = head;
 		for (int i=0; i < loc; i++) {
-			if (cur == null) 
-				break;
+			//If index is out of bounds, no delete.
+			if (cur == null) 		
+				return;
 			prevNode = cur;
 			cur = cur.next;
 		}
-
-		//If index is out of bounds, no delete.
-		if (cur == null) return null;
 
 		Item item = cur.info;	
 		//Special case - last

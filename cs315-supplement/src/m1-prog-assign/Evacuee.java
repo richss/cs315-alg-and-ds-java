@@ -1,3 +1,6 @@
+package edu.erau.cs315;
+
+
 import java.util.Random;
 
 /**
@@ -68,4 +71,6 @@ public class Evacuee {
     public String toString() {
         return name + ", " + busNo;
     }
+
+
 }

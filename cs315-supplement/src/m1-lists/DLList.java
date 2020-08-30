@@ -12,7 +12,7 @@ public class DLList<Item> implements List<Item> {
 	private Node tail;
 
 	public DLList() {
-		head = null;
+		head = tail = null;
 	}
 
 	public Item getAt(int loc) {
@@ -31,15 +31,11 @@ public class DLList<Item> implements List<Item> {
 		//Iterate to the node prior
 		Node cur = head;
 		for (int i=0; i < loc; i++) {
-			if (cur == null) 
-				break;
+			if (cur == null) //Special case - empty or out of bounds
+				return;
 			cur = cur.next;
 		}
-
-		//Special case - empty or out of bounds
-		if (cur == null) 
-			return null;
-		
+	
 		Item item = cur.info;
 		//Special case - last item
 		if ((cur == head) && (cur == tail)) { 
